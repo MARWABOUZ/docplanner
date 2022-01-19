@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cards</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #offices {
+        margin: 0 20%;
+      }
+      .btn {
+        outline: 0;
+        border: 0;
+        border-radius: 4px;
+        padding: 14px 22px;
+        background: #3d83df;
+        font-family: Roboto, Arial, sans-serif;
+        line-height: 12px;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s ease 0s;
+      }
+      .btn:hover {
+        color: #fff;
+        background: #1662c6;
+      }
+
+      .btn_small {
+        font-size: 0.625rem;
+        padding: 10px 20px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .introduction {
+        text-align: center;
+        max-width: 460px;
+        margin: 0 auto;
+        font-size: 0.875em;
+        font-weight: 400px;
+      }
+      .introduction h1 {
+        color: #00b39b;
+        font-size: 2.1428571429em;
+        font-weight: 400px;
+      }
+      .introduction p {
+        line-height: 1.7;
+      }
+
+      .offices_cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+      }
+      .office {
+        margin: 10px;
+        padding: 0;
+        border-radius: 15px;
+      }
+      .office_desc {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: grey;
+        font-weight: bold;
+      }
+      img {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Offices Section-->
+    <section id="offices">
+      <div class="introduction">
+        <h1>Improve the lives of millions. Change&nbsp;yours forever</h1>
+        <p>
+          More than 3200 team mates share our same vision, goals and passion.
+          With offices in <span style="color: red">Warsaw</span>, Barcelona,
+          Istanbul, Rome, Bologna, Mexico City and Curitiba, our search for
+          great talent never stops.
+        </p>
+      </div>
+      <div class="offices_cards">
+        <div class="office">
+          <a href="/career?&amp;loc=poland#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/warsaw.png"
+                srcset="
+                  https://www.docplanner.com/images/warsaw.png    1x,
+                  https://www.docplanner.com/images/warsaw@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Warsaw
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=spain#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/barcelona.png"
+                srcset="
+                  https://www.docplanner.com/images/barcelona.png    1x,
+                  https://www.docplanner.com/images/barcelona@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Barcelona
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=turkey#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/istanbul.png"
+                srcset="
+                  https://www.docplanner.com/images/istanbul.png    1x,
+                  https://www.docplanner.com/images/istanbul@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Istanbul
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=italy#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/rome.png"
+                srcset="
+                  https://www.docplanner.com/images/rome.png    1x,
+                  https://www.docplanner.com/images/rome@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Rome
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=italy#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/bologna.png"
+                srcset="
+                  https://www.docplanner.com/images/bologna.png    1x,
+                  https://www.docplanner.com/images/bologna@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Bologna
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=brazil#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/curitiba.png"
+                srcset="
+                  https://www.docplanner.com/images/curitiba.png    1x,
+                  https://www.docplanner.com/images/curitiba@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Curitiba
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+        <div class="office">
+          <a href="/career?&amp;loc=mexico#jobs-offers">
+            <figure class="office__image">
+              <img
+                scr="https://www.docplanner.com/images/mexico-city.png"
+                srcset="
+                  https://www.docplanner.com/images/mexico-city.png    1x,
+                  https://www.docplanner.com/images/mexico-city@2x.png 2x
+                "
+              />
+            </figure>
+            <div class="office_desc">
+              Mexico City
+              <span class="btn btn_small">See openings</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--END offices Section-->
+  </body>
+</html>

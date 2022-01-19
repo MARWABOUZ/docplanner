@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@200;300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 20% 0 20%;
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 14px 22px;
+  background: #3d83df;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 12px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+}
+.btn:hover {
+  color: #fff;
+  background: #1662c6;
+}
+
+.btn_small {
+  font-size: 0.625rem;
+  padding: 10px 20px;
+}
+/* header css */
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.add-shadow {
+  background: hsla(0, 0%, 100%, 0.98);
+  box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.25s ease 0s;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 20px;
+  color: #ababab;
+  font-size: medium;
+}
+
+.nav-link:hover {
+  color: #00b39b;
+  /* text-decoration: underline; */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #ababab;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #00b39b;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* header css END */
+
+/* section presentation css */
+#presentation {
+  text-align: center;
+  margin: 50px;
+}
+
+#presentation h1 {
+  font-size: 32px;
+  color: #00b39b;
+  margin: 16px 0;
+  font-weight: 300;
+}
+/* END section presentation css */
+
+/* section instroduction css */
+.inline-paragraphs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.inline-paragraphs p {
+  padding: 10px;
+  line-height: 1.75;
+  font-size: 16px;
+}
+/* END section presentation css */
+
+/* section services css */
+
+#services {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  border-radius: 10px;
+  padding: 32px;
+  margin: 20px;
+  height: 345px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.8s ease 0s;
+}
+
+.bg-blue {
+  background-color: #3d83df;
+}
+
+.bg-ciel {
+  background-color: #00ccb1;
+}
+
+.bg-black {
+  background-color: #1b2734;
+}
+
+.card h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: whitesmoke;
+}
+.card select {
+  margin: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: larger;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+select option {
+  color: black;
+}
+
+/* END section services css */
+
+/* section companies css */
+#companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#companies h1 {
+  width: 33%;
+  font-size: 26px;
+  padding: 20px;
+  color: #00b39b;
+}
+
+#companies ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  width: 67%;
+}
+
+#companies ul li {
+  font-size: 16px;
+  display: inline-block;
+  width: 160px;
+  padding: 5px 0;
+}
+#companies a {
+  display: inline-block;
+  padding: 5px 0;
+}
+#companies a:hover path {
+  fill: #00bfa5;
+}
+#companies img {
+  opacity: 0.55;
+  filter: invert(98%) sepia(2%) saturate(0) hue-rotate(180deg) brightness(300%)
+    contrast(0);
+}
+#companies a:hover img {
+  filter: none;
+  opacity: 1;
+}
+#companies svg {
+  height: 20px;
+  width: auto;
+  max-width: 100%;
+  padding-left: 10px;
+}
+#companies path {
+  transition: all 0.2s ease 0s;
+  fill: hsla(0, 0%, 67%, 0.7);
+}
+
+/*END section companies css */
+
+/* Section Offices css*/
+.introduction {
+  max-width: 460px;
+  margin: 0 auto 4.1875rem;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+.introduction h1 {
+  font-size: 2.1428571429em;
+  color: #00b39b;
+}
+
+.introduction p {
+  margin: 1.6em 0;
+  line-height: 1.7142857143;
+}
+
+.offices_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.office {
+  margin-bottom: 5px;
+}
+.office img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.office_desc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.6666666667;
+  color: #747474;
+  background: #fff;
+}
+
+.office a:hover .office_desc {
+  box-shadow: 0 20px 50px 0 rgb(0 0 0 / 40%);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* End Section Offices css*/
+
+/*Section Join-us css */
+#join-us {
+  text-align: center;
+  margin-top: 50px;
+}
+#join-us h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/*END section Join-us css */
+
+/*footer css*/
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 16px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: grey;
+}
+
+footer a {
+  text-decoration: none;
+  color: #3d83df;
+  outline: 0;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/*END footer css */
+
+@media only screen and (max-width: 1200px) {
+  body {
+    /* background-color: tomato; */
+    margin: 0 5%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    /* background-color: tomato; */
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    /* display: none; */
+  }
+  #services {
+    flex-direction: column;
+    align-items: center;
+  }
+  #presentation {
+    margin-top: 100px;
+  }
+  #companies {
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  #companies h1 {
+    width: 100%;
+  }
+  #companies ul {
+    width: 100%;
+  }
+  .offices_cards {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hover tutorial</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+        margin: 10;
+        background-color: cadetblue;
+        color: black;
+      }
+
+      .dropdown-content {
+        display: none;
+      }
+      .dropdown-content a {
+        display: block;
+      }
+
+      .dropdown:hover p {
+        display: none;
+      }
+      .dropdown-content a:hover {
+        background-color: brown;
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <a class="nav-link" href="#">Departments</a>
+      <div class="dropdown-content">
+        <a href="#">Marketing & PR</a>
+        <a href="#">Customer Success & Sales</a>
+        <a href="#">IT, Product, Data</a>
+        <a href="#">Finance & Administration</a>
+        <a href="#">HR & more</a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+        beatae tempore animi tempora! Ipsum laudantium tenetur voluptatibus
+        asperiores iure similique animi beatae. Veritatis accusamus ab unde in
+        officiis possimus rerum.
+      </p>
+    </div>
+  </body>
+</html>

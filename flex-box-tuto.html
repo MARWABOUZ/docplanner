@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@200;300;400&display=swap"); */
+      @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        /* font-family: Roboto, Arial, sans-serif; */
+        font-family: "Oooh Baby", cursive;
+      }
+      #card-group {
+        display: flex;
+      }
+      .card {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 10px;
+        /* border-radius: 50%; */
+      }
+
+      .couleur-blue {
+        background-color: blue;
+      }
+      .couleur-red {
+        background-color: red;
+      }
+      .couleur-black {
+        background-color: black;
+      }
+
+      .white-text {
+        color: white;
+      }
+      div {
+        background-color: blue;
+        padding: 20px;
+      }
+      @media only screen and (max-width: 768px) {
+        #card-group {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="card-group">
+      <div class="card couleur-blue">div1</div>
+      <div class="card couleur-black white-text">div2</div>
+      <div class="card couleur-red">div3</div>
+    </section>
+
+    <h1>Nice Header</h1>
+  </body>
+</html>
